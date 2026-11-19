@@ -13,7 +13,7 @@ if (!domainArg || !/^https:\/\/[^/]+$/.test(domainArg.replace(/\/$/, ''))) {
 }
 const domain = domainArg.replace(/\/$/, '');
 const root = path.resolve(dirArg);
-const SKIP = new Set(['assets', '.docs', '.claude', '.wp-slices', 'node_modules', '.git']);
+const SKIP = new Set(['assets', '.docs', '.claude', '.agents', '.wp-slices', 'node_modules', '.git']);
 
 const list = (dir) =>
   fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {

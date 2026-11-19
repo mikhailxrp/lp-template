@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = path.resolve(process.argv[2] ?? '.');
-const SKIP_DIRS = new Set(['assets', '.docs', '.claude', '.wp-slices', 'node_modules', '.git', 'vendor']);
+const SKIP_DIRS = new Set(['assets', '.docs', '.claude', '.agents', '.wp-slices', 'node_modules', '.git', 'vendor']);
 const ANSWER_MAX_CHARS = 320; // первый абзац после заголовка: ответ в 1-2 предложениях
 const MIN_WORDS_HOME = 300;
 const STUFFING_SHARE = 0.035;
