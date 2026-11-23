@@ -7,7 +7,7 @@ import path from 'node:path';
 const root = path.resolve(process.argv[2] ?? '.');
 const CSS_FILE = 'assets/css/style.css';
 const JS_FILE = 'assets/js/main.js';
-const SKIP_DIRS = new Set(['vendor', 'node_modules', '.git', '.docs', '.claude', '.agents', '.gigacode', '.template']);
+const SKIP_DIRS = new Set(['vendor', 'node_modules', '.git', '.docs', '.claude', '.agents', '.codex', '.gigacode', '.template']);
 const TITLE_MAX = 60;
 const DESC_MIN = 140;
 const DESC_MAX = 160;
